@@ -741,3 +741,10 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.project-card-img {
+  width: 100%; /* Set to fill the parent container */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fits well */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}

@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-//import emotion from "../../Assets/Projects/emotion.png";
+import emotion from "../../Assets/face.png";
+import emotion1 from "../../Assets/med.png";
+import emotion3 from "../../Assets/vit.webp";
 
 function Projects() {
   return (
@@ -18,7 +20,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              //imgPath={emotion}
+              imgPath={emotion}
               isBlog={false}
               title="Face Attendance System using DeepFace"
               description="The system uses pre-stored faces for recognition and employs DeepFacefor accurate facial matching. When a face is detected, it's compared with thestored faces using DeepFace. Upon successful recognition, attendance isautomatically updated on the website, and the data is stored in Firebase forfuture reference"
@@ -28,7 +30,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              //imgPath={emotion}
+              imgPath={emotion1}
               isBlog={false}
               title="Medical image Analysis and decision Support using LLM"
               description="Developed a website for medical imaging pipeline that automatessegmentation, anomaly detection, and report generation, improving diagnosticaccuracy. Utilized a Visual Large Language Model (VLM) for high performance infew-shot learning, generating detailed reports to enhance clinical workflows."
@@ -38,7 +40,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              //imgPath={emotion}
+              imgPath={emotion3}
               isBlog={false}
               title="Vital Fit : Your Health Companion"
               description="Vital Fit is an IoT-based web project that calculates a person's BMI(Body Mass Index) by measuring their height and weight. It providespersonalized diet recommendations to help users maintain a healthierweight."
